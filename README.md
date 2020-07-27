@@ -13,7 +13,7 @@ Original paper : [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612
 
 #### Files
 
-- Yolo_V2_tf_2.ipynb : Yolo V2 implementation with Tensorflow 2.0
+- Object_Detection.ipynb : Yolo V2 implementation with Tensorflow 2.0
 
 #### Requirements
 
