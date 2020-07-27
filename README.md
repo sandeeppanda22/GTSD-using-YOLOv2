@@ -6,15 +6,13 @@ Here is a jupyter notebook featuring a complete implementation from scratch of Y
 - Training from YOLO pretrained weights
 - Visualization of object detection
 
-I use this notebook to train a model to detect crop and weeds in a field. The goal is to detect crop in real time for tractor guidance and to detect weeds to remove them.
+I use this notebook to train a model to detect Traffic Signs
 
 Original paper : [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242) by Joseph Redmond and Ali Farhadi.
 
 #### Files
 
 - Yolo_V2_tf_2.ipynb : Yolo V2 implementation with Tensorflow 2.0
-- Yolo_V2_tf_eager.ipynb : old notebook, Yolo V2 implementation with Tensorflow 1.x with eager execution
-
 
 #### Requirements
 
@@ -28,7 +26,7 @@ Original paper : [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612
 - Download pretrained weights [here](https://pjreddie.com/media/files/yolov2.weights). Place this weights file in notebook directory and name it `yolo.weights`
 - The training requires four directories containing images and annotations :
 
-`train_image_folder/ : contains images files used during training (png format)`
+`train_image_folder/ : contains images files used during training (jpg format)`
 
 `train_annot_folder/ : contains annotations in PASCAL VOC format (one xml file for each image)`
 
@@ -41,7 +39,7 @@ Original paper : [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612
 
 - Define object's labels to detect (same labels as defined in PASCAL VOC xml file). Example :
 ~~~python
-	LABELS           = ('sugarbeet', 'weed')
+	LABELS           = ('prohibitory', 'mandatory', 'danger')
 ~~~
 
 - Define image size in dataset and YOLO grid size. Image size must be YOLO grid size * 32.
@@ -70,17 +68,11 @@ That's it, just run notebook cells to train YOLO on your own data!
 
 
 
-#### Example of use
-
-YOLO model trained on sugarbeet and weed dataset (two labels) :
-
-![](yolo_detect_example.png)
-
-
-
 #### Credits
 
 Many thanks to these great repositories:
+
+https://github.com/jmpap/YOLOV2-Tensorflow-2.0
 
 https://github.com/experiencor/keras-yolo2
 
