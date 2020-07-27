@@ -1,5 +1,5 @@
 # GTSD-using-YOLOv2
-German Traffic Sign Detection Database
+## German Traffic Sign Detection Database
 
 Here is a jupyter notebook featuring a complete implementation from scratch of YOLOV2 with TensorFlow 2.0 :
 
